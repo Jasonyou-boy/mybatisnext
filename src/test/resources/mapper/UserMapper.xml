@@ -10,10 +10,10 @@
         insert into user (user_id,user_name,sex,age) values (#{userId}, #{userName},#{sex}, #{age})
     </insert>
     
-    <select id="select" resultType="org.mybatisnext.domain.User" lang="mybatisnext">
+    <select id="selectUser" resultType="org.mybatisnext.domain.User" lang="mybatisnext">
         select * from `users`
         <where>
-            <handler name="dept"/>
+            <handler name="user"/>
         </where>
     </select>
 
