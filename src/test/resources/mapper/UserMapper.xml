@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "mybatisnext-3-mapper"
+        "http://localhost/data/mybatisnext-3-mapper.dtd">
+
+<mapper namespace="org.mybatisnext.mapper.UserMapper">
+    
+    <insert id="insert">
+        insert into user (user_id,user_name,sex,age) values (#{userId}, #{userName},#{sex}, #{age})
+    </insert>
+    
+    <select id="select" resultType="org.mybatisnext.domain.User" lang="mybatisnext">
+        select * from `users`
+        <where>
+            <handler name="dept"/>
+        </where>
+    </select>
+
+
+</mapper>
