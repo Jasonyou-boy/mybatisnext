@@ -11,6 +11,8 @@ MybatisNext是对Mybatis的SQL语句映射的增强。通过MybatisNext，我们
 
 ## 如何使用
 
+> [!CAUTION]
+> 正在努力开发中，请勿在生产环境中使用。期待你的加入
 ### Maven
 
 ```xml
